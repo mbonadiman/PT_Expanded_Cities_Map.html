@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09a01943688ec6ab5195b90c74a9e6cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09a01943688ec6ab5195b90c74a9e6cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09a01943688ec6ab5195b90c74a9e6cf = L.map(
+                "map_09a01943688ec6ab5195b90c74a9e6cf",
+                {
+                    center: [39.5, -8.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e83e980d2180b47999ad726f1aebaf28 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var marker_faa7ed4abdb5758789993c224dac8d30 = L.marker(
+                [38.75, -9.23],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_acb73ba8c7ef00861a4733e9c72d51ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_faa7ed4abdb5758789993c224dac8d30.setIcon(icon_acb73ba8c7ef00861a4733e9c72d51ea);
+        
+    
+        var popup_bbe3c1ad7a7976e1b0688dd54c5ca6c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74475bfa29c7f736d876ae60a4e9dac4 = $(`<div id="html_74475bfa29c7f736d876ae60a4e9dac4" style="width: 100.0%; height: 100.0%;"><b>Amadora</b> – <i>Lisbon Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €4200–5000/m²<br>Land: €700–1000/m² buildable<br>Construction: €2300–2700/m²<br><small>Spillover from Lisbon; rail/metro links; affordability</small></div>`)[0];
+            popup_bbe3c1ad7a7976e1b0688dd54c5ca6c5.setContent(html_74475bfa29c7f736d876ae60a4e9dac4);
+        
+
+        marker_faa7ed4abdb5758789993c224dac8d30.bindPopup(popup_bbe3c1ad7a7976e1b0688dd54c5ca6c5)
+        ;
+
+        
+    
+    
+            marker_faa7ed4abdb5758789993c224dac8d30.bindTooltip(
+                `<div>
+                     Amadora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1f52668fc3c772d84786c300c9698d6 = L.marker(
+                [38.8, -9.18],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_90d057580aa39a139d27e0603e35fe74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c1f52668fc3c772d84786c300c9698d6.setIcon(icon_90d057580aa39a139d27e0603e35fe74);
+        
+    
+        var popup_6adaefb9a010c8e27e0b128035825e8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcc1477fa34f200709798093f96fed60 = $(`<div id="html_dcc1477fa34f200709798093f96fed60" style="width: 100.0%; height: 100.0%;"><b>Odivelas</b> – <i>Lisbon Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €4400–5200/m²<br>Land: €800–1100/m² buildable<br>Construction: €2300–2700/m²<br><small>Metro (Linha Amarela); jovem-família; baixa oferta de obra nova</small></div>`)[0];
+            popup_6adaefb9a010c8e27e0b128035825e8a.setContent(html_dcc1477fa34f200709798093f96fed60);
+        
+
+        marker_c1f52668fc3c772d84786c300c9698d6.bindPopup(popup_6adaefb9a010c8e27e0b128035825e8a)
+        ;
+
+        
+    
+    
+            marker_c1f52668fc3c772d84786c300c9698d6.bindTooltip(
+                `<div>
+                     Odivelas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b0c380e7a4fb208d69d17a1348a6bb6 = L.marker(
+                [38.7, -9.3],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_5de957ab9d2b6ea2f04fc0a2c857e9df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8b0c380e7a4fb208d69d17a1348a6bb6.setIcon(icon_5de957ab9d2b6ea2f04fc0a2c857e9df);
+        
+    
+        var popup_a1581aa02806faf78983640858837f53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5568ceba0e1bcdee7f3d3230ba5f717b = $(`<div id="html_5568ceba0e1bcdee7f3d3230ba5f717b" style="width: 100.0%; height: 100.0%;"><b>Oeiras</b> – <i>Lisbon Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €5000–5800/m²<br>Land: €1000–1400/m² buildable<br>Construction: €2400–2900/m²<br><small>Emprego qualificado; bons acessos (A5); base corporativa</small></div>`)[0];
+            popup_a1581aa02806faf78983640858837f53.setContent(html_5568ceba0e1bcdee7f3d3230ba5f717b);
+        
+
+        marker_8b0c380e7a4fb208d69d17a1348a6bb6.bindPopup(popup_a1581aa02806faf78983640858837f53)
+        ;
+
+        
+    
+    
+            marker_8b0c380e7a4fb208d69d17a1348a6bb6.bindTooltip(
+                `<div>
+                     Oeiras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d97550a3ed686583b3fa95d6f51dfbb = L.marker(
+                [38.95, -8.99],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_315b6524d0b4758d444df60325b324a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d97550a3ed686583b3fa95d6f51dfbb.setIcon(icon_315b6524d0b4758d444df60325b324a6);
+        
+    
+        var popup_4ce1adacbfc9f87871419cbd2fa94c1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_675e91f18dfa068fdb1682aa442391b9 = $(`<div id="html_675e91f18dfa068fdb1682aa442391b9" style="width: 100.0%; height: 100.0%;"><b>Vila Franca de Xira</b> – <i>Lisbon Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3600–4200/m²<br>Land: €300–600/m² buildable<br>Construction: €2200–2600/m²<br><small>Corredor Norte com comboios; preço-alvo mais acessível</small></div>`)[0];
+            popup_4ce1adacbfc9f87871419cbd2fa94c1e.setContent(html_675e91f18dfa068fdb1682aa442391b9);
+        
+
+        marker_3d97550a3ed686583b3fa95d6f51dfbb.bindPopup(popup_4ce1adacbfc9f87871419cbd2fa94c1e)
+        ;
+
+        
+    
+    
+            marker_3d97550a3ed686583b3fa95d6f51dfbb.bindTooltip(
+                `<div>
+                     Vila Franca de Xira
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_039fe76c23d44e8ab9f2247f8201eb11 = L.marker(
+                [41.18, -8.69],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_e8e350561ec553ba48c12f7092cbdc76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_039fe76c23d44e8ab9f2247f8201eb11.setIcon(icon_e8e350561ec553ba48c12f7092cbdc76);
+        
+    
+        var popup_db77fd96f77b5001dd2090161bf266a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fe68bbe6c7b2f134d5fb4958cb0bb91 = $(`<div id="html_7fe68bbe6c7b2f134d5fb4958cb0bb91" style="width: 100.0%; height: 100.0%;"><b>Matosinhos</b> – <i>Porto Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3700–4200/m²<br>Land: €700–900/m² buildable<br>Construction: €2200–2600/m²<br><small>Costa + metro; procura mista residente/arrendamento</small></div>`)[0];
+            popup_db77fd96f77b5001dd2090161bf266a4.setContent(html_7fe68bbe6c7b2f134d5fb4958cb0bb91);
+        
+
+        marker_039fe76c23d44e8ab9f2247f8201eb11.bindPopup(popup_db77fd96f77b5001dd2090161bf266a4)
+        ;
+
+        
+    
+    
+            marker_039fe76c23d44e8ab9f2247f8201eb11.bindTooltip(
+                `<div>
+                     Matosinhos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f138e8de38c8857f173f124283f30b8 = L.marker(
+                [41.13, -8.61],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_33f7ff388eb8f61de23a6d6f43090a18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0f138e8de38c8857f173f124283f30b8.setIcon(icon_33f7ff388eb8f61de23a6d6f43090a18);
+        
+    
+        var popup_95161e13f1acf7645f79719444a383ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5cfe23cf1205fe9fcc7328ebef987f4 = $(`<div id="html_f5cfe23cf1205fe9fcc7328ebef987f4" style="width: 100.0%; height: 100.0%;"><b>Vila Nova de Gaia</b> – <i>Porto Metro</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3400–4000/m²<br>Land: €500–800/m² buildable<br>Construction: €2200–2600/m²<br><small>Travessia rápida p/ Porto; grande base de compradores</small></div>`)[0];
+            popup_95161e13f1acf7645f79719444a383ba.setContent(html_f5cfe23cf1205fe9fcc7328ebef987f4);
+        
+
+        marker_0f138e8de38c8857f173f124283f30b8.bindPopup(popup_95161e13f1acf7645f79719444a383ba)
+        ;
+
+        
+    
+    
+            marker_0f138e8de38c8857f173f124283f30b8.bindTooltip(
+                `<div>
+                     Vila Nova de Gaia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52414adc7f4d77151c9b75a73bdf7512 = L.marker(
+                [41.55, -8.42],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_a522fb010c2a871bc6c0e531209f0462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_52414adc7f4d77151c9b75a73bdf7512.setIcon(icon_a522fb010c2a871bc6c0e531209f0462);
+        
+    
+        var popup_2b16009d85f98c3945bf6dbf574426c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da748b4c9907af08cc3037b61475ed7b = $(`<div id="html_da748b4c9907af08cc3037b61475ed7b" style="width: 100.0%; height: 100.0%;"><b>Braga</b> – <i>Norte</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3000–3600/m²<br>Land: €250–600/m² buildable<br>Construction: €2100–2500/m²<br><small>Crescimento demográfico e tecnológico; jovens profissionais</small></div>`)[0];
+            popup_2b16009d85f98c3945bf6dbf574426c2.setContent(html_da748b4c9907af08cc3037b61475ed7b);
+        
+
+        marker_52414adc7f4d77151c9b75a73bdf7512.bindPopup(popup_2b16009d85f98c3945bf6dbf574426c2)
+        ;
+
+        
+    
+    
+            marker_52414adc7f4d77151c9b75a73bdf7512.bindTooltip(
+                `<div>
+                     Braga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63b83e6393dc1559d063f40d7209f34e = L.marker(
+                [40.64, -8.65],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_c92b768420198bb4b54fd6e7c6d7b925 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_63b83e6393dc1559d063f40d7209f34e.setIcon(icon_c92b768420198bb4b54fd6e7c6d7b925);
+        
+    
+        var popup_c8020340ae8fafe2ac815e76125976e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_194db8328fe2b0d1160f429df49bef2d = $(`<div id="html_194db8328fe2b0d1160f429df49bef2d" style="width: 100.0%; height: 100.0%;"><b>Aveiro</b> – <i>Centro Litoral</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €2800–3400/m²<br>Land: €250–600/m² buildable<br>Construction: €2100–2500/m²<br><small>Polo universitário/industrial; qualidade de vida; proximidade litoral</small></div>`)[0];
+            popup_c8020340ae8fafe2ac815e76125976e8.setContent(html_194db8328fe2b0d1160f429df49bef2d);
+        
+
+        marker_63b83e6393dc1559d063f40d7209f34e.bindPopup(popup_c8020340ae8fafe2ac815e76125976e8)
+        ;
+
+        
+    
+    
+            marker_63b83e6393dc1559d063f40d7209f34e.bindTooltip(
+                `<div>
+                     Aveiro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41bc41fe91a7b5e2cef2d5bae6e7eef5 = L.marker(
+                [40.15, -8.86],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_fc6ad323e32c238bfac00ebc9429293a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_41bc41fe91a7b5e2cef2d5bae6e7eef5.setIcon(icon_fc6ad323e32c238bfac00ebc9429293a);
+        
+    
+        var popup_02b1ed7dfc2c28daf28fa25922e38b10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e094e0b552f55c5f12176f4a2b46b3c3 = $(`<div id="html_e094e0b552f55c5f12176f4a2b46b3c3" style="width: 100.0%; height: 100.0%;"><b>Figueira da Foz</b> – <i>Centro Litoral</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €2300–2800/m²<br>Land: €150–450/m² buildable<br>Construction: €2000–2400/m²<br><small>Costa, turismo doméstico; values-friendly</small></div>`)[0];
+            popup_02b1ed7dfc2c28daf28fa25922e38b10.setContent(html_e094e0b552f55c5f12176f4a2b46b3c3);
+        
+
+        marker_41bc41fe91a7b5e2cef2d5bae6e7eef5.bindPopup(popup_02b1ed7dfc2c28daf28fa25922e38b10)
+        ;
+
+        
+    
+    
+            marker_41bc41fe91a7b5e2cef2d5bae6e7eef5.bindTooltip(
+                `<div>
+                     Figueira da Foz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52820e53cfc2845870ece739ee9231e3 = L.marker(
+                [39.6, -9.07],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_93447525f5fae705990bb01d4dd66309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_52820e53cfc2845870ece739ee9231e3.setIcon(icon_93447525f5fae705990bb01d4dd66309);
+        
+    
+        var popup_aee2812d5cb9f628dca8681256515c86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a89eceb9ba308393f1f516a7527730ea = $(`<div id="html_a89eceb9ba308393f1f516a7527730ea" style="width: 100.0%; height: 100.0%;"><b>Nazaré</b> – <i>Centro Litoral</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €2400–3000/m²<br>Land: €200–500/m² buildable<br>Construction: €2000–2400/m²<br><small>Destino de marca (ondas gigantes); procura sazonal e internacional</small></div>`)[0];
+            popup_aee2812d5cb9f628dca8681256515c86.setContent(html_a89eceb9ba308393f1f516a7527730ea);
+        
+
+        marker_52820e53cfc2845870ece739ee9231e3.bindPopup(popup_aee2812d5cb9f628dca8681256515c86)
+        ;
+
+        
+    
+    
+            marker_52820e53cfc2845870ece739ee9231e3.bindTooltip(
+                `<div>
+                     Nazaré
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e39cf4cc2dd517001863cfd07bf3306 = L.marker(
+                [37.02, -7.93],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_0019a2ac0d595252318323e0b9454a1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2e39cf4cc2dd517001863cfd07bf3306.setIcon(icon_0019a2ac0d595252318323e0b9454a1b);
+        
+    
+        var popup_717604b2c50bf5525a532bd82b9ff346 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72ba4c209f1cd48bb81ccaf2ef92dd42 = $(`<div id="html_72ba4c209f1cd48bb81ccaf2ef92dd42" style="width: 100.0%; height: 100.0%;"><b>Faro</b> – <i>Sul / Algarve</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3200–3800/m²<br>Land: €300–700/m² buildable<br>Construction: €2200–2700/m²<br><small>Demanda internacional; hub administrativo do Algarve</small></div>`)[0];
+            popup_717604b2c50bf5525a532bd82b9ff346.setContent(html_72ba4c209f1cd48bb81ccaf2ef92dd42);
+        
+
+        marker_2e39cf4cc2dd517001863cfd07bf3306.bindPopup(popup_717604b2c50bf5525a532bd82b9ff346)
+        ;
+
+        
+    
+    
+            marker_2e39cf4cc2dd517001863cfd07bf3306.bindTooltip(
+                `<div>
+                     Faro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4770e187f0cb85365116c0495a00613 = L.marker(
+                [32.65, -16.91],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_0695a085ed25825641e7c5d804fe9cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a4770e187f0cb85365116c0495a00613.setIcon(icon_0695a085ed25825641e7c5d804fe9cdc);
+        
+    
+        var popup_afade7063084ff1ad47e382441c727f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b2726896e7edc53471226ff7c13518f = $(`<div id="html_3b2726896e7edc53471226ff7c13518f" style="width: 100.0%; height: 100.0%;"><b>Funchal</b> – <i>Ilhas / Madeira</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3000–3600/m²<br>Land: €350–800/m² buildable<br>Construction: €2300–2800/m²<br><small>Residência internacional, nómadas digitais; oferta limitada</small></div>`)[0];
+            popup_afade7063084ff1ad47e382441c727f3.setContent(html_3b2726896e7edc53471226ff7c13518f);
+        
+
+        marker_a4770e187f0cb85365116c0495a00613.bindPopup(popup_afade7063084ff1ad47e382441c727f3)
+        ;
+
+        
+    
+    
+            marker_a4770e187f0cb85365116c0495a00613.bindTooltip(
+                `<div>
+                     Funchal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc4ae0ae2aae77be8577e315befaba38 = L.marker(
+                [39.24, -8.68],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_6d510f7dd41e14e86eb72c7569117445 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dc4ae0ae2aae77be8577e315befaba38.setIcon(icon_6d510f7dd41e14e86eb72c7569117445);
+        
+    
+        var popup_27e543a833ad4910a40bd388cf005498 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af634625ad0ec57d3a6aa07215e9536d = $(`<div id="html_af634625ad0ec57d3a6aa07215e9536d" style="width: 100.0%; height: 100.0%;"><b>Santarém</b> – <i>Ribatejo</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €2100–2600/m²<br>Land: €120–350/m² buildable<br>Construction: €2000–2400/m²<br><small>Interior próximo a Lisboa; política de reclassificação de solos favorece pipeline</small></div>`)[0];
+            popup_27e543a833ad4910a40bd388cf005498.setContent(html_af634625ad0ec57d3a6aa07215e9536d);
+        
+
+        marker_dc4ae0ae2aae77be8577e315befaba38.bindPopup(popup_27e543a833ad4910a40bd388cf005498)
+        ;
+
+        
+    
+    
+            marker_dc4ae0ae2aae77be8577e315befaba38.bindTooltip(
+                `<div>
+                     Santarém
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_daa5b9e5a43bbd1eb0722d3175bd99e5 = L.marker(
+                [38.52, -8.89],
+                {}
+            ).addTo(map_09a01943688ec6ab5195b90c74a9e6cf);
+        
+    
+            var icon_2777745550e6f7ba0eb87173d729c379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_daa5b9e5a43bbd1eb0722d3175bd99e5.setIcon(icon_2777745550e6f7ba0eb87173d729c379);
+        
+    
+        var popup_fb025a54798dc8569a72f7092a475de1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba7974d71bc09469ea507f5a97e92502 = $(`<div id="html_ba7974d71bc09469ea507f5a97e92502" style="width: 100.0%; height: 100.0%;"><b>Setúbal</b> – <i>Península de Setúbal</i><br>Focus: T1–T2 ≤90 m²<br>Exit: €3000–3600/m²<br>Land: €300–700/m² buildable<br>Construction: €2200–2600/m²<br><small>Acessos A2/ferrovia; alternativa costeira à capital</small></div>`)[0];
+            popup_fb025a54798dc8569a72f7092a475de1.setContent(html_ba7974d71bc09469ea507f5a97e92502);
+        
+
+        marker_daa5b9e5a43bbd1eb0722d3175bd99e5.bindPopup(popup_fb025a54798dc8569a72f7092a475de1)
+        ;
+
+        
+    
+    
+            marker_daa5b9e5a43bbd1eb0722d3175bd99e5.bindTooltip(
+                `<div>
+                     Setúbal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
